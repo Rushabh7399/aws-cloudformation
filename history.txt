@@ -1,0 +1,31 @@
+    1  aws cloudformation validate-template --template-body file://first_ec2.yaml
+    2  history
+    3  aws sts assume-role --role-arn arn:aws:iam::705384652500:role/test-aws-xloudformation --session-name test
+    4  aws sts assume-role help
+    5  aws sts assume-role --role-arn arn:aws:iam::705384652500:role/test-aws-xloudformation --role-session-name test
+    6  aws sts assume-role help
+    7  aws sts assume-role --role-arn arn:aws:iam::705384652500:role/test-aws-xloudformation --role-session-name test --duration-second 3600
+    8  aws sts assume-role --role-arn arn:aws:iam::705384652500:role/test-aws-xloudformation --role-session-name test --duration-second 36000
+    9  aws sts assume-role --role-arn arn:aws:iam::705384652500:role/test-aws-xloudformation --role-session-name test --duration-second 7200
+   10  aws sts assume-role --role-arn arn:aws:iam::705384652500:role/test-aws-xloudformation --role-session-name test --duration-second 3600
+   11  aws cloudformation validate-template --template-body file://first_ec2.yaml
+   12  aws cloudformation describe-stacks
+   13  aws cloudformation describe-stacks --stack-name my-ec2-instance
+   14  aws cloudformation describe-stacks --stack-name my-ec2-atXK
+   15  aws cloudformation describe-stacks --stack-name my-ec2-STACK
+   16  aws cloudformation describe-stacks --stack-name my-ec2-stack
+   17  aws cloudformation describe-stacks --stack-name my-ec2-stack --query Stacks[0].StackStatus
+   18  aws cloudformation create-stack --stack-name my-ec2-stack-2 --template-body file://first_ec2.yaml
+   19  git logs
+   20  git log
+   21  git add *
+   22  git add first_ec2.yaml 
+   23  git status
+   24  git commit -m  "First Instance creation"
+   25  git push
+   26  aws cloudformation create-stack --stack-name my-ec2-stack-with-sg --template-body file://ec2_with_security_group.yaml
+   27  history
+   28  aws cloudformation describe-stack --stack-name my-ec2-stack-with-sg
+   29  aws cloudformation describe-stacks --stack-name my-ec2-stack-with-sg
+   30  history -o history.txt
+   31  history >> history.txt
